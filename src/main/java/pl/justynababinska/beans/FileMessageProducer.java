@@ -8,6 +8,7 @@ import java.nio.file.Path;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
@@ -15,6 +16,7 @@ import pl.justynababinska.beans.Producer.ProducerType;
 
 @Component
 @Producer(type = ProducerType.FILE)
+@PropertySource("classpath:appConfig.properties")
 public class FileMessageProducer implements MessageProducer {
 
 	@Autowired

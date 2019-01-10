@@ -11,8 +11,7 @@ import pl.justynababinska.beans.MessagePrinter;
 public class SpringDiApplication {
 
 	public static void main(String[] args) {
-		AnnotationConfigApplicationContext ctx = 
-				new AnnotationConfigApplicationContext(SpringDiApplication.class);
+		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringDiApplication.class);
 		MessagePrinter printer = ctx.getBean(MessagePrinter.class);
 		printer.print();
 		ctx.close();
