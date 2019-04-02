@@ -2,6 +2,7 @@
 > The application was created to improve knowledge of the Dependency Injection with Spring.
 
 ## Technologies
+* JDK 9
 * Maven - version 3.5.4
 * Spring - version 5.1.2
 
